@@ -108,13 +108,13 @@ h1 strong {
   margin-left: 2.5rem;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 961px) {
   html {
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
   html {
     font-size: 10px;
   }
