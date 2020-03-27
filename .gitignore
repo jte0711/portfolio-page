@@ -23,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # msc
-.svg
-/public
+*.svg
+*.png
+public/
