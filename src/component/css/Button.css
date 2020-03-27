@@ -1,0 +1,31 @@
+.btn {
+  margin: 0rem 2.5rem;
+  width: 12.5rem;
+  height: 3.125rem;
+  border-radius: 15px;
+  background-color: #00A8CC;
+}
+
+.btn:hover{
+  background-color: #142850;
+  opacity: 1;
+}
+
+.noMargin {
+  margin: 0rem;
+}
+
+.smallBtn {
+  height: 3.125rem;
+  width: 7.5rem;
+  border-radius: 30px;
+  background-color: white;
+  border-color: #27496D;
+  border-width: 2.5px;
+  color: #27496D;
+  font-weight:bold;
+}
+
+.btnMargin {
+  margin-left: 1.5rem;
+}

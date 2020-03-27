@@ -1,0 +1,41 @@
+.contactCard {
+  width: 28.625rem;
+  height: 11.5rem;
+  border-radius: 25px;
+  border: 0.05px solid #000000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.contactMargin {
+  margin: 0rem 2rem;
+}
+
+.logoMargin {
+  margin: 0rem 1.5rem;
+}
+
+.cDetails {
+  margin-left: 0rem !important;
+}
+.cName {
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.cEmail {
+  margin-bottom: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.fab {
+  font-size: 2.1rem;
+}

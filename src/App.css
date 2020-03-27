@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+.app {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.25rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brandLogo {
+  margin-left: 5rem;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navLink {
+  margin-right: 5rem;
+}
+
+
+/* Banner CSS */
+
+.bannerPage {
+  display: flex;
+  justify-content: center;
+  margin-top: 12rem;
+  height: 42.5rem;
+}
+
+.bannerBody {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bannerBody span {
+  font-size: 1.5rem;
+}
+
+.bannerBody h1 {
+  font-size: 3rem;
+}
+
+h1 strong {
+  font-weight: bolder;
+}
+
+.bannerBody p {
+  font-weight: lighter;
+}
+
+.buttonGroup {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+/* Portfolio CSS */
+
+.portfolioBg {
+  background-color: #142850;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12rem;
+}
+
+.portfolioBox {
+  margin-top: 5rem;
+  width: 68.75rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.portfolioBox h2 {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.contactSection {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSection {
+  width: 100%;
+  height: 3.125rem;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.footerText {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 2.5rem;
 }
