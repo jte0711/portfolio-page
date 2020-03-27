@@ -107,3 +107,15 @@ h1 strong {
   line-height: 16px;
   margin-left: 2.5rem;
 }
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
