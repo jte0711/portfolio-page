@@ -1,20 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import Button from './component/button.js';
 import ProjectRow from './component/projectRow.js';
 import ContactCard from './component/contactcard.js';
+import NavBar from './component/navbar.js';
 import './App.css';
 
 function App(){
   return(
     <div className="app">
-      <nav className="navBar">
-        <a className="brandLogo">James.</a>
-        <div className="">
-          <a className="navLink">Portfolio</a>
-          <a className="navLink">Contact</a>
-        </div>
-      </nav>
+      <NavBar/>
       <div className="bannerPage">
         <div className="bannerBody">
           <span>Hi there, I'm James</span>

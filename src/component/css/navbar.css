@@ -1,0 +1,22 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.25rem;
+}
+
+.brandLogo {
+  margin-left: 5rem;
+  font-size: 2rem;
+}
+
+.navLink {
+  margin-right: 5rem;
+}
+
+.toggleItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
