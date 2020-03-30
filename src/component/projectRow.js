@@ -24,7 +24,7 @@ function ProjectRow(props){
   },[]);
 
   useEffect(()=>{
-    let isMobile = (screenWidth <= 720);
+    let isMobile = (screenWidth <= 400);
 
     if (isMobile !== true){
       setResult(
