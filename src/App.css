@@ -69,8 +69,15 @@ h1 strong {
   width: 100%;
   height: 30rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contactText {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
 }
 
 .footerSection {
@@ -83,10 +90,10 @@ h1 strong {
 }
 
 .footerText {
-  color: white;
+  color:#C4C4C4;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   margin-left: 2.5rem;
 }

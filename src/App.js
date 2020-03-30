@@ -31,6 +31,7 @@ function App(){
         </div>
       </div>
       <div className="contactSection">
+        <p className="contactText">Reach me here</p>
         <ContactCard/>
       </div>
       <div className="footerSection">
