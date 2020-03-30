@@ -11,6 +11,7 @@ const NavBar = (props) => {
     console.log("called");
     setCollapsed(!collapsed);
   };
+  
   const resize = () =>{
     let curWidth = window.innerWidth;
     if (curWidth !== screenWidth) {
@@ -60,7 +61,7 @@ const NavBar = (props) => {
   },[screenWidth, collapsed]);
 
   
-    return result;
+  return result;
 }
 
 export default NavBar;

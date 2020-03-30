@@ -107,4 +107,7 @@ h1 strong {
   html {
     font-size: 10px;
   }
+  .portfolioBox {
+    width: 32rem;
+  }
 }
