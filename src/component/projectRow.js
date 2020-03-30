@@ -52,8 +52,8 @@ function ProjectRow(props){
           Nam in aliquam neque. Phasellus a tristique tellus, quis euismod velit.</p>
           <p className="stackDesc">Stacks: NextJs, ReactJs, etc</p>
           <div className="d-flex">
-            <Button buttonName={"Visit"}/>
-            <Button buttonName={"GitHub"}/>
+            <Button addClass={"smallBtn"} buttonName={"Visit"}/>
+            <Button addClass={"btnMargin smallBtn"} buttonName={"GitHub"}/>
           </div>
         </div>
       );
