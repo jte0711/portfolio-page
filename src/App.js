@@ -26,7 +26,7 @@ function App(){
         <div className="portfolioBox">
           <h2>My Portfolio</h2>
           <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/landingpage.png"} projectDtls={landingPageDtl} projectStack={landingPageStack} github={"https://github.com/jte0711/simple-landing-page"} projectLink="https://landing-page-95.herokuapp.com/"/>
-          <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/todolist.png"} projectDtls={todoDtl} projectStack={todoStack} projectLink="https://todolist-frontend123.herokuapp.com/"/>
+          <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/todolist.png"} projectDtls={todoDtl} projectStack={todoStack} github={"https://github.com/jte0711/todolist"} projectLink="https://todolist-frontend123.herokuapp.com/"/>
           <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/previewer.png"} projectDtls={previewerDtl} projectStack={previewerStack} projectLink="https://codepen.io/jte0711/pen/ZEGLRLB"/>
           <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/quotegenerator.png"} projectDtls={quoteDtl} projectStack={quoteStack} projectLink="https://codepen.io/jte0711/pen/vYOXorz"/>
         </div>
