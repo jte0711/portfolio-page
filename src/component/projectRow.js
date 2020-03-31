@@ -7,11 +7,17 @@ function ProjectRow(props){
   const [projectImg, setProjectImg] = useState('');
   const [screenWidth, setScreenWidth] = useState(1000);
   const [result, setResult] = useState(<h1>Test</h1>);
-  
+
   const resize = () =>{
     let curWidth = window.innerWidth;
     if (curWidth !== screenWidth) {
       setScreenWidth(curWidth);
+    }
+  };
+
+  const checkGitHub = () =>{
+    if (props.github){
+      return (<Button addClass={"btnMargin smallBtn"} addLink={props.github} buttonName={"GitHub"}/>);
     }
   };
 
@@ -24,21 +30,21 @@ function ProjectRow(props){
   },[]);
 
   useEffect(()=>{
+
     let isMobile = (screenWidth <= 400);
 
     if (isMobile !== true){
       setResult(
       <div className="projectRow">
         <div className="prImage">
-          <img alt="Project Preview" src={projectImg}/>
+          <img src={props.imgSrc} alt="page preview"/>
         </div>
         <div className="prDescDiv">
-          <p className="mLeft prDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit arcu et vulputate commodo.
-          Nam in aliquam neque. Phasellus a tristique tellus, quis euismod velit.</p>
-          <p className="mLeft">Stacks: NextJs, ReactJs, etc</p>
+          <p className="mLeft prDesc">{props.projectDtls}</p>
+          <p className="mLeft"><b>Stack: </b>{props.projectStack}</p>
           <div className="mLeft d-flex">
-            <Button addClass={"noMargin smallBtn"} buttonName={"Visit"}/>
-            <Button addClass={"btnMargin smallBtn"} buttonName={"GitHub"}/>
+            <Button addClass={"noMargin smallBtn"} addLink={props.projectLink} buttonName={"Visit"}/>
+            {checkGitHub(isMobile)}
           </div>
         </div>
       </div>);
@@ -46,14 +52,13 @@ function ProjectRow(props){
       setResult(
         <div className="projectRow">
           <div className="prImage">
-            <img alt="Project Preview" src={projectImg}/>
+            <img src={props.imgSrc} alt="page preview"/>
           </div>
-          <p className="prDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit arcu et vulputate commodo.
-          Nam in aliquam neque. Phasellus a tristique tellus, quis euismod velit.</p>
-          <p className="stackDesc">Stacks: NextJs, ReactJs, etc</p>
+          <p className="prDesc">{props.projectDtls}</p>
+          <p className="stackDesc"><b>Stack: </b>{props.projectStack}</p>
           <div className="d-flex">
-            <Button addClass={"smallBtn"} buttonName={"Visit"}/>
-            <Button addClass={"btnMargin smallBtn"} buttonName={"GitHub"}/>
+            <Button addClass={"smallBtn"} addLink={props.projectLink} buttonName={"Visit"}/>
+            {checkGitHub(isMobile)}
           </div>
         </div>
       );

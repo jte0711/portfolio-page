@@ -5,6 +5,8 @@ import ContactCard from './component/contactcard.js';
 import NavBar from './component/navbar.js';
 import './App.css';
 
+import {landingPageDtl, landingPageStack, todoDtl, todoStack, previewerDtl, previewerStack, quoteDtl, quoteStack} from './component/projectData.js';
+
 function App(){
   return(
     <div className="app">
@@ -23,11 +25,10 @@ function App(){
       <div className="portfolioBg">
         <div className="portfolioBox">
           <h2>My Portfolio</h2>
-          <ProjectRow projectLink="https://codepen.io/jte0711/pen/ZEGLRLB"/>
-          <ProjectRow/>
-          <ProjectRow/>
-          <ProjectRow/>
-          <ProjectRow/>
+          <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/landingpage.png"} projectDtls={landingPageDtl} projectStack={landingPageStack} github={"https://github.com/jte0711/simple-landing-page"} projectLink="https://landing-page-95.herokuapp.com/"/>
+          <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/todolist.png"} projectDtls={todoDtl} projectStack={todoStack} projectLink="https://todolist-frontend123.herokuapp.com/"/>
+          <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/previewer.png"} projectDtls={previewerDtl} projectStack={previewerStack} projectLink="https://codepen.io/jte0711/pen/ZEGLRLB"/>
+          <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/quotegenerator.png"} projectDtls={quoteDtl} projectStack={quoteStack} projectLink="https://codepen.io/jte0711/pen/vYOXorz"/>
         </div>
       </div>
       <div className="contactSection">

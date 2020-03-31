@@ -3,7 +3,12 @@ import './css/Button.css';
 
 function Button(props){
 
-  let [classes, setClasses] = React.useState('btn btn-primary');
+  const [classes, setClasses] = React.useState('btn btn-primary');
+
+  const handleClick = ()=>{
+    window.open(props.addLink, "_blank");
+  };
+
 
   React.useEffect(()=>{
     if(props.addClass){
@@ -14,7 +19,7 @@ function Button(props){
   return(
     <div id={props.buttonId} className={"button"}>
       {/* <button type="button" className="btn btn-primary">{props.buttonName}</button> */}
-      <button type="button" className={classes}>{props.buttonName}</button>
+      <button onClick={handleClick} type="button" className={classes}>{props.buttonName}</button>
     </div>
   );
 }
