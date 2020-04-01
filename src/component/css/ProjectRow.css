@@ -39,7 +39,21 @@
   max-width: 30.375rem;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 1025px){
+  .prImage {
+    margin-right: 1rem;
+  }
+
+  .prDescDiv {
+    margin-left: 1rem;
+  }
+
+  .prDescDiv {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 426px){
   
   .projectRow {
     width: 100%;

@@ -98,6 +98,12 @@ h1 strong {
   margin-left: 2.5rem;
 }
 
+@media only screen and (max-width: 1025px){
+  .portfolioBox {
+    width: 55.75rem;
+  }
+}
+
 @media only screen and (max-width: 961px) {
   html {
     font-size: 12px;
@@ -110,7 +116,7 @@ h1 strong {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 426px) {
   html {
     font-size: 10px;
   }

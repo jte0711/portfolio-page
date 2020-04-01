@@ -6,7 +6,11 @@ function Button(props){
   const [classes, setClasses] = React.useState('btn btn-primary');
 
   const handleClick = ()=>{
-    window.open(props.addLink, "_blank");
+    if(props.addHref){
+      window.location.href = props.addHref;
+    } else {
+      window.open(props.addLink, "_blank");
+    }
   };
 
 
@@ -19,7 +23,6 @@ function Button(props){
   
   return(
     <div id={props.buttonId} className={"button"}>
-      {/* <button type="button" className="btn btn-primary">{props.buttonName}</button> */}
       <button onClick={handleClick} type="button" className={classes}>{props.buttonName}</button>
     </div>
   );
