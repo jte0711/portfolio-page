@@ -13,6 +13,11 @@
 
 .navLink {
   margin-right: 5rem;
+  color: black;
+}
+
+.navLink:hover {
+  color: black;
 }
 
 .toggleItems {

@@ -22,7 +22,7 @@ function App(){
           </div>
         </div>
       </div>
-      <div className="portfolioBg">
+      <div id="portfolio" className="portfolioBg">
         <div className="portfolioBox">
           <h2>My Portfolio</h2>
           <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/landingpage.png"} projectDtls={landingPageDtl} projectStack={landingPageStack} github={"https://github.com/jte0711/simple-landing-page"} projectLink="https://landing-page-95.herokuapp.com/"/>
@@ -31,7 +31,7 @@ function App(){
           <ProjectRow imgSrc={process.env.PUBLIC_URL + "images/quotegenerator.png"} projectDtls={quoteDtl} projectStack={quoteStack} projectLink="https://codepen.io/jte0711/pen/vYOXorz"/>
         </div>
       </div>
-      <div className="contactSection">
+      <div id="contact" className="contactSection">
         <p className="contactText">Reach me here</p>
         <ContactCard/>
       </div>

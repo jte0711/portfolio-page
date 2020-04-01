@@ -14,7 +14,8 @@ function Button(props){
     if(props.addClass){
       setClasses(classes.concat(' ',props.addClass));
     }
-  },[]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[props.addClass]);
   
   return(
     <div id={props.buttonId} className={"button"}>

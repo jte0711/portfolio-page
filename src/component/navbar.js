@@ -7,38 +7,38 @@ const NavBar = (props) => {
   const [screenWidth, setScreenWidth] = useState(1000);
   const [result, setResult] = useState(<h1>Test</h1>);
 
-  const toggleNavbar = () => {
-    console.log("called");
-    setCollapsed(!collapsed);
-  };
-  
-  const resize = () =>{
-    let curWidth = window.innerWidth;
-    if (curWidth !== screenWidth) {
-      setScreenWidth(curWidth);
-    }
-  };
-
   useEffect(()=>{
+    const resize = () =>{
+      let curWidth = window.innerWidth;
+      if (curWidth !== screenWidth) {
+        setScreenWidth(curWidth);
+      }
+    };
     window.addEventListener("resize", resize);
     resize();
-  },[]);
+
+    return ()=>{
+      window.removeEventListener("resize", resize);
+    };
+  },[screenWidth]);
 
   useEffect(()=>{
+
+    const toggleNavbar = () => {
+      setCollapsed(!collapsed);
+    };
 
     let isMobile = (screenWidth <= 720);
 
     if (isMobile !== true){
-      console.log("not true screen");
       setResult(<nav className="navBar">
-      <a className="brandLogo">James.</a>
+      <span className="brandLogo">James.</span>
       <div className="">
-        <a className="navLink">Portfolio</a>
-        <a className="navLink">Contact</a>
+        <a className="navLink" href="#portfolio">Portfolio</a>
+        <a className="navLink" href="#contact">Contact</a>
       </div>
     </nav>);
     }else{
-      console.log("true screen")
       setResult(
         <div>
           <Navbar color="faded" light>

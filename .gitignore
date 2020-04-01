@@ -24,6 +24,5 @@ yarn-error.log*
 
 # msc
 *.svg
-*.png
 public/images/
 robots.txt

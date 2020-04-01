@@ -4,32 +4,33 @@ import './css/ProjectRow.css';
 
 function ProjectRow(props){
 
-  const [projectImg, setProjectImg] = useState('');
   const [screenWidth, setScreenWidth] = useState(1000);
   const [result, setResult] = useState(<h1>Test</h1>);
 
-  const resize = () =>{
-    let curWidth = window.innerWidth;
-    if (curWidth !== screenWidth) {
-      setScreenWidth(curWidth);
-    }
-  };
-
-  const checkGitHub = () =>{
-    if (props.github){
-      return (<Button addClass={"btnMargin smallBtn"} addLink={props.github} buttonName={"GitHub"}/>);
-    }
-  };
-
   useEffect(()=>{
+
+    const resize = () =>{
+      let curWidth = window.innerWidth;
+      if (curWidth !== screenWidth) {
+        setScreenWidth(curWidth);
+      }
+    };
+
     window.addEventListener("resize", resize);
     resize();
-    // Deal with this below after finishing everything else
-    setProjectImg("https://codepen.io/jte0711/pen/ZEGLRLB");
-    // ----------------------------------------------------
-  },[]);
+
+    return ()=>{
+      window.removeEventListener("resize", resize);
+    };
+  },[screenWidth]);
 
   useEffect(()=>{
+
+    const checkGitHub = () =>{
+      if (props.github){
+        return (<Button addClass={"btnMargin smallBtn"} addLink={props.github} buttonName={"GitHub"}/>);
+      }
+    };
 
     let isMobile = (screenWidth <= 400);
 
@@ -64,7 +65,7 @@ function ProjectRow(props){
       );
 
     }
-  },[screenWidth]);
+  },[screenWidth, props.github, props.projectDtls, props.imgSrc, props.projectStack, props.projectLink]);
 
   return result;
 }
