@@ -15,7 +15,7 @@ function App(){
         <div className="bannerBody">
           <span>Hi there, I'm James</span>
           <h1>a <strong>Software Developer</strong></h1>
-          <p>I design and build websites and applications , but the most important I solve problems</p>
+          <p>I design and build websites and applications , but most importantly, I solve problems</p>
           <div className="buttonGroup">
             <Button buttonId="projectButton" addHref={"#portfolio"} buttonName={"My Portfolio"}/>
             <Button buttonId="contactButton" addHref={"#contact"} buttonName={"Contact"}/>

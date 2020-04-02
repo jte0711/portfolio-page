@@ -32,7 +32,7 @@ function ProjectRow(props){
       }
     };
 
-    let isMobile = (screenWidth <= 426);
+    let isMobile = (screenWidth <= 500); //426
 
     if (isMobile !== true){
       setResult(

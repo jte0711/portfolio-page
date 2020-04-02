@@ -116,7 +116,7 @@ h1 strong {
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 10px;
   }
